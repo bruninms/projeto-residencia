@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetando a margem padrão do corpo e definindo a fonte padrão */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* --- SEÇÃO DO CABEÇALHO --- */
+
+/* Cabeçalho geral */
+header {
+    display: flex;
+    flex-direction: column; /* Conteúdo em coluna */
+    align-items: center;
+    background-color: #072944; /* Fundo preto */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Div principal do cabeçalho, centraliza o conteúdo e ajusta o espaçamento */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Largura total */
+    max-width: 1200px; /* Largura máxima */
+}
+
+/* Estilos do título/logo */
+.head > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    font-size: 17pt;
+}
+.logo-home {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a logo e o texto */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    text-decoration: none;
+}
+
+/* Estilo do título da logo */
+.logo-home h1 {
+    color: white; /* Cor do texto branco */
+    font-size: 28px; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte */
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Container da barra de pesquisa: centralização horizontal */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Expande para preencher o espaço restante */
+}
+
+/* Estilos do campo de pesquisa */
+.search-container input {
+    font-family: 'Montserrat';
+    max-width: 350px; /* Largura máxima */
+    width: 100%; /* Largura total do container pai */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px 5px 5px 5px; /* Arredondamento nas bordas esquerdas */
+    font-size: 14px; /* Tamanho da fonte */
+    outline-color: #072944; /* Cor do contorno ao focar */
+}
+
+/* Estilos do botão de pesquisa */
+.search-container button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Tamanho do ícone no botão de pesquisa */
+.search-container button img {
+    width: 55px;
+    height: 55px;
+    margin-left: -15px;
+}
+
+/* Placeholder da barra de pesquisa*/
+.search-container > input::placeholder {
+    color: rgb(82, 81, 81);
+}
+
+/* Contêiner principal para o ícone e os links */
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo do ícone de usuário */
+.usuario-icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px; /* Espaçamento entre o ícone e os links */
+}
+
+/* Contêiner para os links */
+.login-buttons {
+    display: flex;
+    flex-direction: column; /* Alinha os links em coluna */
+}
+
+/* Estilo dos links */
+.icone-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste para o botão "CADASTRE-SE" */
+.registro-link {
+    margin-top: 5px; /* Espaçamento entre "ENTRE OU" e "CADASTRE-SE" */
+}
+
+
+/* Container principal */
+.CadFun-container {
+    max-width: 900px; /* Aumenta a largura para suportar duas colunas */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fundo claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Título do formulário */
+.CadFun-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilização geral do formulário */
+#form-cadastro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas com largura igual */
+    gap: 20px; /* Espaçamento entre os campos */
+}
+
+/* Grupo do formulário */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos de largura total */
+.form-group.full-width {
+    grid-column: span 2; /* Ocupa as duas colunas */
+}
+
+/* Rótulos */
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Inputs e selects */
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito ao focar */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff; /* Cor de destaque ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Realce */
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    grid-column: span 2; /* Botão ocupa as duas colunas */
+    padding: 12px;
+    background-color: #427176;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #form-cadastro {
+        grid-template-columns: 1fr; /* Alinha os campos em uma única coluna */
+    }
+
+    .form-group.full-width {
+        grid-column: span 1; /* Garante que ocupe uma única coluna em telas menores */
+    }
+}

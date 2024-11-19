@@ -1,0 +1,256 @@
+/* Importando a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetando a margem padrão do corpo e definindo a fonte padrão */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/* --- SEÇÃO DO CABEÇALHO --- */
+
+/* Cabeçalho geral */
+header {
+    display: flex;
+    flex-direction: column; /* Conteúdo em coluna */
+    align-items: center;
+    background-color: #072944; /* Fundo preto */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Div principal do cabeçalho, centraliza o conteúdo e ajusta o espaçamento */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Largura total */
+    max-width: 1600px;
+}
+
+/* Estilos do título/logo */
+.head > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    font-size: 17pt;
+}
+
+.logo-home {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a logo e o texto */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    text-decoration: none;
+}
+
+/* Estilo do título da logo */
+.logo-home h1 {
+    color: white; /* Cor do texto branco */
+    font-size: 28px; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte */
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Container da barra de pesquisa: centralização horizontal */
+.search-container {
+    margin-left: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Expande para preencher o espaço restante */
+}
+
+/* Estilos do campo de pesquisa */
+.search-container input {
+    font-family: 'Montserrat';
+    max-width: 350px; /* Largura máxima */
+    width: 100%; /* Largura total do container pai */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px 5px 5px 5px; /* Arredondamento nas bordas esquerdas */
+    font-size: 14px; /* Tamanho da fonte */
+    outline-color: #072944; /* Cor do contorno ao focar */
+}
+
+/* Estilos do botão de pesquisa */
+.search-container button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Tamanho do ícone no botão de pesquisa */
+.search-container button img {
+    width: 55px;
+    height: 55px;
+    margin-left: -15px;
+}
+
+/* Placeholder da barra de pesquisa*/
+.search-container > input::placeholder {
+    color: rgb(82, 81, 81);
+}
+
+/* Contêiner principal para o ícone e os links */
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Contêiner para os links */
+.login-buttons {
+    display: flex;
+    flex-direction: column; /* Alinha os links em coluna */
+}
+
+/* Estilo dos links */
+.icone-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos gerais da barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Links na barra de navegação */
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+    text-decoration: wavy;
+    color: #437377;
+}
+
+nav a.active {
+    color: #437377; /* Cor para o link ativo */
+    text-decoration: underline; /* Pode usar underline ou outro estilo */
+}
+
+/* --- SEÇÃO PRINCIPAL --- */
+
+/* Padding geral para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Margem inferior e tamanho de fonte dos títulos */
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.login-advogado {
+    display: flex;
+    flex-direction: row; /* Alinha os links em linha */
+    gap: 30px;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.icone-processos,
+.icone-cadastrar {
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    border: gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.login-advogado a {
+    text-decoration: none; /* remove o sublinhado dos links */
+    background-color: #dcdcdc1c; /* fundo dos botões */
+    padding: 10px 20px; /* espaçamento interno dos botões */
+    border-radius: 5px; /* cantos arredondados */
+    font-weight: bold;
+}
+
+.titulo-processos {
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(128, 128, 128, 0.747);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.titulo-informacao {
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 300px;
+    max-width: 800px;
+}
+
+.paragrafo-card {
+    font-weight: bold;
+}
+
+.card-header {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 650;
+}
+
+.border-secondary{
+    background-color: gray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaço entre o card e o botão */
+}
+
+.botoes-interativos {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.747);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botoes-interativos:hover {
+    background-color: #0056b3;
+}

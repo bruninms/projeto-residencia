@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetando a margem padrão do corpo e definindo a fonte padrão */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* --- SEÇÃO DE LOGIN --- */
+
+/* Definindo o tamanho da área de login como 100% da largura e altura da tela */
+.main-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Definindo uma área intermediária de login, centralizando o conteúdo vertical e horizontalmente */
+.meio-login {
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinhamento em coluna */
+}
+
+/* Card de login com largura fixa, centralizando o conteúdo em coluna e com espaçamento interno */
+.card-login {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Conteúdo em coluna */
+    padding: 60px 75px; /* Espaçamento interno */
+}
+
+/* Estilo de fundo para o card de login
+.login-background {
+    background-color: #072944;
+    border-radius: 5px;
+}*/
+
+/* Estilo do título do card de login */
+.card-login > h1 {
+    color: #000000;
+    font-weight: 800;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    font-size: 17pt;
+}
+
+/* Container para cada campo de texto (input) do formulário */
+.textfield {
+    display: flex;
+    flex-direction: column; /* Alinha o label e input em coluna */
+    align-items: flex-start; /* Alinhamento dos itens à esquerda */
+    justify-content: center;
+    margin: 10px 0px; /* Margem vertical para espaçamento entre campos */
+    width: 100%; /* 100% da largura do container pai */
+}
+
+/* Estilos dos inputs */
+.textfield > input {
+    width: 100%; /* Largura total do container pai */
+    max-width: 350px; /* Largura máxima para o input */
+    border: none; /* Sem borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 16px; /* Espaçamento interno */
+    background: #f5f5f5; /* Cor de fundo branco */
+    color: #000000; /* Cor do texto */
+    font-size: 14pt; /* Tamanho da fonte */
+    outline: none; /* Remove o contorno ao clicar */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+/* Estilos do label dos inputs */
+.textfield > label {
+    color: #000000;
+    margin-bottom: 10px; /* Espaço entre o label e o input */
+}
+
+/* Cor do placeholder dos inputs */
+.textfield > input::placeholder {
+    color: rgb(207, 207, 207);
+}
+
+/* Botão de login */
+.btn-login {
+    width: 100%; /* Largura total do container pai */
+    max-width: 350px; /* Largura máxima */
+    padding: 16px 0px; /* Espaço interno */
+    margin: 25px 0; /* Margem vertical */
+    border: none; /* Sem borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none; /* Sem contorno ao clicar */
+    text-transform: uppercase; /* Caixa alta */
+    font-weight: 800; /* Negrito */
+    letter-spacing: 3px; /* Espaçamento entre letras */
+    color: #ffffff; /* Cor do texto branco */
+    background: #437377;
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Links para recuperação de senha ou cadastro */
+.links {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+/* Estilo dos links */
+.links a {
+    color: #000000;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 12pt;
+}
+
+/* Estilo ao passar o mouse sobre os links */
+.links a:hover {
+    text-decoration: wavy;
+    color: #437377;
+}
+
+
+/* --- SEÇÃO DO CABEÇALHO --- */
+
+/* Cabeçalho geral */
+header {
+    display: flex;
+    flex-direction: column; /* Conteúdo em coluna */
+    align-items: center;
+    background-color: #072944; /* Fundo preto */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Div principal do cabeçalho, centraliza o conteúdo e ajusta o espaçamento */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Largura total */
+    max-width: 1200px; /* Largura máxima */
+}
+
+/* Estilos do título/logo */
+.head > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    font-size: 17pt;
+}
+.logo-home {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a logo e o texto */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    text-decoration: none;
+}
+
+/* Estilo do título da logo */
+.logo-home h1 {
+    color: white; /* Cor do texto branco */
+    font-size: 28px; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte */
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Container da barra de pesquisa: centralização horizontal */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Expande para preencher o espaço restante */
+}
+
+/* Estilos do campo de pesquisa */
+.search-container input {
+    font-family: 'Montserrat';
+    max-width: 350px; /* Largura máxima */
+    width: 100%; /* Largura total do container pai */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px 5px 5px 5px; /* Arredondamento nas bordas esquerdas */
+    font-size: 14px; /* Tamanho da fonte */
+    outline-color: #072944; /* Cor do contorno ao focar */
+}
+
+/* Estilos do botão de pesquisa */
+.search-container button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Tamanho do ícone no botão de pesquisa */
+.search-container button img {
+    width: 55px;
+    height: 55px;
+    margin-left: -15px;
+}
+
+/* Placeholder da barra de pesquisa*/
+.search-container > input::placeholder {
+    color: rgb(82, 81, 81);
+}
+
+/* Contêiner principal para o ícone e os links */
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo do ícone de usuário */
+.usuario-icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px; /* Espaçamento entre o ícone e os links */
+}
+
+/* Contêiner para os links */
+.login-buttons {
+    display: flex;
+    flex-direction: column; /* Alinha os links em coluna */
+}
+
+/* Estilo dos links */
+.icone-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste para o botão "CADASTRE-SE" */
+.registro-link {
+    margin-top: 5px; /* Espaçamento entre "ENTRE OU" e "CADASTRE-SE" */
+}
