@@ -52,7 +52,7 @@ header {
 
 /* Container da barra de pesquisa: centralização horizontal */
 .search-container {
-    margin-left: 177px;
+    margin-left: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@ header {
 /* Estilos do campo de pesquisa */
 .search-container input {
     font-family: 'Montserrat';
-    max-width: 350px; /* Largura máxima */
+    max-width: 500px; /* Largura máxima */
     width: 100%; /* Largura total do container pai */
     padding: 10px; /* Espaço interno */
     border: 1px solid #ccc; /* Borda cinza */
