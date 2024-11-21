@@ -44,10 +44,8 @@ Desenvolvemos um sistema que:
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Frontend**: [ HTML, CSS, JavaScript.]  
-- **Backend**: [Node.js, Python]  
-- **Banco de Dados**: [Especifique aqui: MySQL, MongoDB, etc.]  
-- **Outras Ferramentas**: [Especifique aqui se houver]
+- **Frontend**: [ HTML, CSS, JavaScript.]     
+- **Outras Ferramentas**: [GitHub]
 
 ---
 
