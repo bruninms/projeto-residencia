@@ -52,20 +52,25 @@ Desenvolvemos um sistema que:
 ## 🛠️ Como Utilizar
 
 ### Pré-requisitos
-- [Liste aqui as ferramentas ou dependências necessárias para rodar o projeto.]
+Antes de começar, você precisará de:
+- Um computador com sistema operacional Windows, macOS ou Linux.  
+- Acesso à internet.  
+- O **Visual Studio Code (VSCode)** ou outro editor de código instalado.    
 
 ### Passos para Instalação
-1. Clone este repositório:
-   git clone []
-Navegue até o diretório do projeto:
-cd sistema-processos
-Instale as dependências:
-[Insira o comando, ex.: npm install, pip install, etc.]
-Execute o projeto:
-[Insira o comando, ex.: npm start, python manage.py runserver, etc.]
-Acesse no navegador:
-arduino
-[]
+1. **Clone o repositório**:  
+   Abra o terminal e execute:  
+   git clone https://github.com/squad14/sistema-processos.git
+Acesse o diretório do projeto:
+
+cd projeto-residencia-master
+Abra o projeto no VSCode:
+No terminal, digite:
+
+code .
+
+execute o programa 
+
 🛡️ Contribuição
 Contribuições são bem-vindas!
 Siga os passos para colaborar:
