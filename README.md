@@ -1,5 +1,5 @@
 # Sistema de Gerenciamento de Processos Jurídicos
-//Adicionar informações pendentes.
+
 ## 📖 Resumo do Projeto
 
 Este sistema foi desenvolvido pelo **Squad 14**, em parceria com a empresa **AvantSec** e com o suporte do **Porto Digital**.  
@@ -45,7 +45,7 @@ Desenvolvemos um sistema que:
 ## 🚀 Tecnologias Utilizadas
 
 - **Frontend**: [ HTML, CSS, JavaScript.]     
-- **Outras Ferramentas**: [GitHub]
+- **Outras Ferramentas**: [Git, GitHub]
 
 ---
 
@@ -60,7 +60,7 @@ Antes de começar, você precisará de:
 ### Passos para Instalação
 1. **Clone o repositório**:  
    Abra o terminal e execute:  
-   git clone https://github.com/squad14/sistema-processos.git
+   git clone https://github.com/bruninms/projeto-residencia.git
 Acesse o diretório do projeto:
 
 cd projeto-residencia-master
@@ -81,7 +81,4 @@ Envie suas alterações:
 git commit -m "Descrição da nova feature"
 git push origin feature/nova-feature
 Abra um Pull Request.
-📜 Licença
-Este projeto está licenciado sob a [Insira o tipo de licença, como MIT, GPL, etc.]. Consulte o arquivo LICENSE para mais detalhes.
-
 ✨ Desenvolvido com dedicação pelo Squad 14, em parceria com AvantSec e Porto Digital.
